@@ -1,0 +1,48 @@
+/*Colores*/
+$color-primario: #F1F2F6;
+$color-secundario: #FE941F ;
+$color-terciario:#F8BC7B;
+
+/*Fuente principal*/
+
+$fuente-principal: font-family 'Barlow Semi Condensed', sans-serif;
+
+/*Tamaño de letra*/
+
+$fuente-chica: 15px;
+$fuente-mediana: 25px;
+
+/*Iconos*/
+
+$iconos-chicos: 35px;
+$iconos-grandes: 50px;
+
+/*Pantallas*/
+
+$tablet: 760px;
+$deskop: 992px;
+$deskopxl: 1200px;
+
+/*Separaciones (margin y padding)*/
+$espacio-chicoX: 10px;
+$espacio-chico: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 60px;
+
+/*Mixings*/
+
+@mixin flex-columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-fila{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

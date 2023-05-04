@@ -1,0 +1,69 @@
+body{
+    font-size: $fuente-principal;
+    background-color: $color-secundario;
+    color: $color-primario;
+    
+}
+
+.nav-link,
+.navbar-nav .nav-link.active{
+background-color: $color-terciario;
+&:hover{
+    color: $color-primario;
+}
+}
+
+.navbar-toggler{
+    background-color: $color-terciario;
+}
+
+.carousel-item{
+    height: 480px;
+}
+
+@media (min-width:$tablet) {
+    .carrusel-item img{
+       height:70vh;
+    }  
+}
+@media (min-width:$deskop){
+    .carrusel-item img{
+        height: 80vh;
+    }
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+    margin-top: $espacio-chico;
+}
+
+.parrafo-general{
+    font-size: 20px;
+    margin-top: $espacio-medio;
+}
+
+footer{
+    margin-top: $espacio-grande;
+    @include flex-columna;
+
+    .container, .a
+        {
+        color: $color-primario;
+        background-color: $color-terciario;
+       
+    }
+    .icono-ig{
+        height: 70px;
+    }
+    .p-footer{
+        font-size: $fuente-chica;
+    }
+    }
+
+    .btn{
+        border: solid 2px $color-primario;
+        color: $color-primario;
+        &:hover{
+            color: $color-secundario;
+        }
+    }
