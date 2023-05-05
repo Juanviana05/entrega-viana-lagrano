@@ -12,6 +12,10 @@ body {
   color: #F1F2F6;
 }
 
+.menu {
+  background-color: #FE941F;
+}
+
 .nav-link,
 .navbar-nav .nav-link.active {
   background-color: #F8BC7B;
@@ -21,6 +25,19 @@ body {
   color: #F1F2F6;
 }
 
+.logo-grano {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .logo-grano {
+    background-color: #FE941F;
+  }
+}
 .navbar-toggler {
   background-color: #F8BC7B;
 }
@@ -72,6 +89,18 @@ footer .p-footer {
 }
 .btn:hover {
   color: #FE941F;
+}
+
+.botones-contacto {
+  margin-top: 20px;
+}
+
+.mapa-nosotros {
+  margin-top: 60px;
+}
+
+.titulo-contacto {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

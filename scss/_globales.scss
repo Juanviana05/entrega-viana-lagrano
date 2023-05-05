@@ -5,12 +5,27 @@ body{
     
 }
 
+.menu{
+    background-color: $color-secundario;
+}
+
 .nav-link,
 .navbar-nav .nav-link.active{
 background-color: $color-terciario;
 &:hover{
     color: $color-primario;
 }
+}
+.logo-grano{
+    height: $iconos-xl;
+    @include flex-fila;
+    
+
+}
+@media (min-width:$deskop){
+    .logo-grano{
+        background-color: $color-secundario;
+    }
 }
 
 .navbar-toggler{
