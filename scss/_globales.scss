@@ -4,48 +4,54 @@ body{
     color: $color-primario;
     
 }
+header {
+    background-color: $color-terciario; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: $espacio-chicoX; 
+    padding-bottom: $espacio-chicoX; 
+  }
+  
 
 .menu{
-    background-color: $color-secundario;
+    background-color: $color-terciario;
+    
 }
+.navbar-nav {
+    margin-top: $espacio-chico
+  }
+  
+  .nav-item {
+    margin: 0 10px; 
+  }
 
 .nav-link,
 .navbar-nav .nav-link.active{
-background-color: $color-terciario;
+    background-color: $color-terciario;
 &:hover{
     color: $color-primario;
 }
-}
-.logo-grano{
-    height: $iconos-xl;
-    @include flex-fila;
-    
 
 }
-@media (min-width:$deskop){
-    .logo-grano{
-        background-color: $color-secundario;
-    }
+.logo-grano {
+    /*@include flex-fila;*/
+   height: 90px;   
+
 }
+@media (min-width:$tablet){
+    .menu {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+    }
+  }
+ 
 
 .navbar-toggler{
     background-color: $color-terciario;
 }
 
-.carousel-item{
-    height: 480px;
-}
 
-@media (min-width:$tablet) {
-    .carrusel-item img{
-       height:70vh;
-    }  
-}
-@media (min-width:$deskop){
-    .carrusel-item img{
-        height: 80vh;
-    }
-}
 
 h1, h2, h3, h4{
     text-align: center;
@@ -55,6 +61,10 @@ h1, h2, h3, h4{
 .parrafo-general{
     font-size: 20px;
     margin-top: $espacio-medio;
+    text-align: center; 
+    margin: 0 20px; 
+    margin-top: $espacio-chicoX;
+      
 }
 
 footer{
@@ -75,10 +85,4 @@ footer{
     }
     }
 
-    .btn{
-        border: solid 2px $color-primario;
-        color: $color-primario;
-        &:hover{
-            color: $color-secundario;
-        }
-    }
+   

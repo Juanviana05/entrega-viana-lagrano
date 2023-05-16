@@ -1,0 +1,22 @@
+.card{
+ margin-top: $espacio-medio;
+}
+/*.btn{
+    border: solid 2px $color-primario;
+    color: $color-primario;
+    &:hover{
+        color: $color-secundario;
+    }
+}*/
+.my-card-btn {
+    background-color: #f38620e3;
+    color: #ffffff; 
+    border:none;
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    font-weight: bold;  
+  }
+  .my-card-btn:hover {
+    background-color: red; 
+  }
+  
