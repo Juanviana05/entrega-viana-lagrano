@@ -24,11 +24,3 @@
 .titulo-contacto{
   margin-top: $espacio-chico;  
 }
-.titulo-contacto{
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.titulo-contacto{
-  opacity: 1; /* Se desvanece gradualmente a la opacidad completa al hacer hover */
-}

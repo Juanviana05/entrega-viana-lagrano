@@ -42,8 +42,14 @@ header {
 }
 
 .logo-grano {
-  /*@include flex-fila;*/
   height: 90px;
+  text-align: center;
+}
+
+.logo-grano img {
+  width: 20vw;
+  max-width: 200px;
+  height: auto;
 }
 
 @media (min-width: 760px) {
@@ -62,6 +68,24 @@ h1, h2, h3, h4 {
   margin-top: 20px;
 }
 
+h1 {
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .parrafo-general {
   font-size: 20px;
   margin-top: 40px;
@@ -114,15 +138,6 @@ footer .p-footer {
   margin-top: 20px;
 }
 
-.titulo-contacto {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.titulo-contacto {
-  opacity: 1; /* Se desvanece gradualmente a la opacidad completa al hacer hover */
-}
-
 .carousel-item img {
   width: 100%;
   height: 100%;
@@ -130,7 +145,7 @@ footer .p-footer {
 }
 
 #divTituloInicio {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 #myCarousel {
@@ -203,6 +218,11 @@ td {
 
 .centrado {
   text-align: center;
+}
+
+.error-404 {
+  text-align: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
